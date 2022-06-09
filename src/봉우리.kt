@@ -1,12 +1,10 @@
 import java.io.BufferedReader
 import java.io.InputStreamReader
-import kotlin.IntArray
-import kotlin.Array
 
 fun main() {
     BufferedReader(InputStreamReader(System.`in`)).use {
         val n = it.readLine().toInt()
-        val k = Array<kotlin.IntArray>(n) { IntArray(n) }
+        val k = Array<IntArray>(n) { IntArray(n) }
         for (i in 0 until n) {
             val str = it.readLine().split(" ")
             for (j in 0 until n) {
